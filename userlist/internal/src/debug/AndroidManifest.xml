@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.picpay.desafio.android.userlist">
+
+    <application>
+        <activity
+            android:name="com.picpay.desafio.android.userlist.HiltTestActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
