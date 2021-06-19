@@ -9,6 +9,6 @@ class UserListNavigatorImpl @Inject constructor(
 ) : UserListNavigator {
 
     override fun openUserListScreen() {
-        navController.navigate(R.id.open_user_list)
+        navController.navigate(R.id.user_list_graph)
     }
 }
