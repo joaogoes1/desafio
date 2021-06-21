@@ -5,6 +5,7 @@
       <module name="desafio-android.app" target="1.8" />
       <module name="desafio-android.commons" target="1.8" />
       <module name="desafio-android.network.internal" target="1.8" />
+      <module name="desafio-android.testcommons" target="1.8" />
       <module name="desafio-android.userlist.internal" target="1.8" />
     </bytecodeTargetLevel>
   </component>

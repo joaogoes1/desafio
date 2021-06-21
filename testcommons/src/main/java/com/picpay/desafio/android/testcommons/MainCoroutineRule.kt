@@ -1,5 +1,6 @@
-package com.picpay.desafio.android.commons
+package com.picpay.desafio.android.testcommons
 
+import androidx.annotation.RestrictTo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestCoroutineDispatcher
@@ -11,6 +12,7 @@ import org.junit.runner.Description
 
 
 @ExperimentalCoroutinesApi
+@RestrictTo(RestrictTo.Scope.TESTS)
 class MainCoroutineRule(
     private val dispatcher: TestCoroutineDispatcher = TestCoroutineDispatcher()
 ) : TestWatcher(), TestCoroutineScope by TestCoroutineScope(dispatcher) {

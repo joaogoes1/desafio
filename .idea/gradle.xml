@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/network" />
             <option value="$PROJECT_DIR$/network/internal" />
             <option value="$PROJECT_DIR$/network/public" />
+            <option value="$PROJECT_DIR$/testcommons" />
             <option value="$PROJECT_DIR$/userlist" />
             <option value="$PROJECT_DIR$/userlist/internal" />
             <option value="$PROJECT_DIR$/userlist/public" />

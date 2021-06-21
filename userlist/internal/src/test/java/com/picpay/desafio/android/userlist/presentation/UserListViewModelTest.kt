@@ -1,8 +1,8 @@
 package com.picpay.desafio.android.userlist.presentation
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.picpay.desafio.android.commons.MainCoroutineRule
-import com.picpay.desafio.android.commons.getOrAwaitValue
+import com.picpay.desafio.android.testcommons.MainCoroutineRule
+import com.picpay.desafio.android.testcommons.getOrAwaitValue
 import com.picpay.desafio.android.network.model.Result
 import com.picpay.desafio.android.network.model.ResultError
 import com.picpay.desafio.android.userlist.data.model.User

@@ -17,21 +17,26 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnitRunner
 import com.picpay.desafio.android.userlist.presentation.userlist.UserListFragment
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
+import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import retrofit2.Retrofit
+import javax.inject.Singleton
 
 
 @MediumTest
 @HiltAndroidTest
 @ExperimentalCoroutinesApi
-//@RunWith(AndroidJUnit4ClassRunner::class)
 class UserListFragmentTest {
 
     @get:Rule
@@ -54,6 +59,15 @@ class UserListFragmentTest {
     @Test
     fun onSuccess_showUsers() {
         onView(withId(R.id.progressBar)).check(matches(isDisplayed()))
+    }
+
+    @Module
+    @InstallIn(SingletonComponent::class)
+    class FakeBaseUrlModule {
+
+        @Provides
+        @Singleton
+        fun provideUrl(): Retrofit = Retrofit.Builder().build()
     }
 }
 

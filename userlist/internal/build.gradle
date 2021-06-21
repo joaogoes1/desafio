@@ -41,6 +41,7 @@ dependencies {
     implementation(project(":userlist:public"))
     implementation(project(":network:public"))
     implementation(project(":commons"))
+    testImplementation(project(":testcommons"))
     implementation 'com.google.dagger:hilt-android:2.37'
     kapt 'com.google.dagger:hilt-compiler:2.37'
 
